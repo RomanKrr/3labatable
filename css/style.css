@@ -1,66 +1,58 @@
-*{
+body {
     margin: 0;
-    padding: 0;
-}
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-table {
-    width: 75%;
-    border-collapse: collapse;
-    margin: 0;
-    padding: 0;
-}
-
-th, td {
-    border: 1px solid rgb(255, 0, 0);
+    padding: 0 0 10px 0;
     text-align: center;
-    width: 300px;
-}
-
-th {
-    background-color: #f2f2f2;
-    padding: 10px;
-    width: 100%;    
-}
-img{
     width: 100%;
-    height: 100%;
 }
-.number{
-    border: 1px solid red;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+
+.container{
+    width: 100%;
+    height: max-content;
+    margin: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-ul{
-    list-style: none;
-}
-td h2{
-    margin-left: 20px;
+.block {
+    position: relative;
+    border: red solid 2px;
+    height: 50vh;
+    margin: 0;
+    padding: 10px;
+    width: 49%;
     text-align: start;
-    display: flex;
-    gap: 10px;
-}
-ul li:nth-child(1) {
-    color: black; /* Білий колір тексту для першого <li> елементу */
+    float: left;
+    box-sizing: border-box;
+    min-width: 300px;
 }
 
-ul li:nth-child(2) {
-    color: red; /* Червоний колір тексту для другого <li> елементу */
+h1 {
+    font-size: 40px;
 }
 
-ul li:nth-child(3) {
-    color: black; /* Білий колір тексту для третього <li> елементу */
+h2 {
+    font-size: 30px;
 }
 
-ul li:nth-child(4) {
-    color: red; /* Червоний колір тексту для четвертого <li> елементу */
+li {
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li:nth-child(2n+1) {
+    color: red;
+}
+
+span {
+    position: absolute;
+    left: 5px;
+    border-radius: 50%;
+    border: 2px red solid;
+    width: 30px;
+    height: 30px;
+//    text-align: center;
 }
